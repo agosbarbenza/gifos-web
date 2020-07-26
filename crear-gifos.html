@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tu propio Gifo</title>
+    <link id="themes" href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:300,400,500,700&display=swap" rel="stylesheet">
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+</head>
+<body class="body">
+    <div class="bar">
+        <h1 class="text-bar">¡Bienvenidos/as a gifOS.com! —————— Donde los gifs están.////// Número de visitas: 12.765.803</h1>
+    </div>
+
+    <nav id="nav" class="nav">
+
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html"><img class="arrow" alt="Botón ir atás" src="images/arrow.svg"></a>
+                <img class="logo" alt="Logo Gifos Tema: Día" src="images/gifOF_logo.png">
+                <img class="dark-logo" alt="Logo Gifos Tema: Noche"  src="images/gifOF_logo_dark.png">
+            </div>
+
+        <div class="menu-container">
+           <a class="link" href="crear-gifos.html"> <div class="button">
+                    <h2 class="option">Crear gifOS</h2>
+                </div>
+            </a>
+            <div class="probar">
+                <div class="button2">
+                    <h2 class="option">Elegir tema</h2>
+                </div>
+                <div id="half-button" class="half-button">
+                    <img class="dropdown" alt="Botón Dropdown tema: día" src="images/dropdown.svg">
+                    <img class="dark-dropdown" alt="Botón Dropdown tema: noche" src="images/dropdown.svg">
+                </div>
+            </div>
+            <div id="mis-gifos-boton" class="mis-gifos">
+                <a class="link-crear" href="crear-gifos.html"><h2 class="option"><span id="span-mis-gifos" class="span">M</span>is gifOS</h2></a>
+            </div>
+        </div>
+
+        </div>
+        <div id="modes" class="modes">
+            <div id="sailor-container" class="sailor-container">
+                <div class="sailor-div"><h3 class="sailor">Sailor Day</h3></div>
+                <div class="sailor-div"><h3 class="sailor">Sailor Night</h3></div>
+            </div>    
+        </div>
+    </nav>
+
+        <div id="crearGifos" class="crear-gifos">
+            <div class="search-bar">
+                <h3 class="buscar">Crear gifOS</h3>
+            </div>
+
+            <div id="card" class="card">
+                <h2 class="card-title">Aquí podrás crear tus propios gifOS</h2>
+                <p class="texto">Crear tu <span class="numero">gifO</span> es muy fácil, graba cualquier imagen con tu cámara y obtén gifOS personalizados. Los pasos para crear tu gifO son: </p>
+                <ul class="lista">
+                    <li class="item"><span class="numero">1)</span> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</li>
+                    <li class="item"><span class="numero">2)</span> Capturar tu momento gifO</li>    
+                    <li class="item"><span class="numero">3)</span> Revisar el momento</li>
+                    <li class="item"><span class="numero">4)</span> Listo para subir y compartir!</li>
+                    <li class="item">¿Quieres comenzar a crear tu gifO ahora?</li>
+                </ul>
+
+                <div class="botones">
+                   <a class="link" href="index.html"><div class="boton-1">Cancelar</div> </a>
+                    <div class="boton-2" id="btn-start">Comenzar</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="chequeo" class="no-mostrar probar-gifos borrar">
+            <div class="search-bar check-bar">
+                <h3 id= "titulo" class="buscar">Un Chequeo Antes de Empezar</h3>
+                <img src="images/button3.svg" alt="Boton cerrar" class="btn-cerrar">
+            </div>
+            <div  id= "vidContainer" class="vidContainer">
+                <video class="video" id="video"></video>
+            </div>
+            <div id="btns-capturar-cam" class="btn-container">
+                <div class="btn1" id="btn1">
+                    <img id="btn-cam" class="btn-cam" src="images/camera.svg" alt="Boton cámara">
+                </div>
+                <div class="btn2" id="btn2">
+                    <h3 id="boton-capturar" class="capture">Capturar</h3>
+                </div>
+            </div>
+
+            <div id="btns-listo" class="btn-container no-mostrar">
+                <div class="btn1" id="record-icon">
+                    <img id="btn-record" class="btn-cam recording" src="images/recording.svg" alt="Boton recording">
+                </div>
+                <div class="btn2" id="btn-listo">
+                    <h3 id="boton-listo" class="listo">Listo</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="vistaPrevia" class="probar-gifos no-mostrar">
+            <div class="search-bar check-bar">
+                <h3 class="buscar">Vista Previa</h3>
+                <img src="images/button3.svg" alt="Boton cerrar" class="btn-cerrar">
+            </div>
+
+            <div id="vistaPreviaContainer" class="vidContainer img-container">
+            </div>
+            <div class="btn-container-1">
+                <div class="timer2"></div>
+                <div class="flechita"><img alt="Flecha" src="images/forward.svg"></div>
+                <div class="botones-previa">
+                    <div id="btnRepetir" class="boton-previa-1">Repetir Captura</div>
+                    <div id="subir-btn" class="boton-previa-2 btn2 capture">Subir GifO</div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="subiendo-gifo-card" class="probar-gifos no-mostrar">
+            <div class="search-bar check-bar">
+                <h3 class="buscar">Subiendo gifO</h3>
+                <img src="images/button3.svg" alt="Boton cerrar" class="btn-cerrar">
+            </div>
+
+            <div id="container-subiendo" class="vidContainer img-container">
+                <div class="container-subiendo-2">
+                    <div class="container-globe">
+                        <img class="img-globe" src="images/globe_img.png" alt="Globo Mapamundi">
+                    </div>
+                    <h3 id="subiendo-text" class="subiendo-texto">Estamos subiendo tu gifO…</h3>
+                    <div class="barra-progreso" id="barra-progreso">
+                        <div id="barra-rosa" class="barra-rosa"></div>
+                    </div>
+                    <h3 class="tiempo-restante-texto"> Tiempo restante: <span class="tiempo-span">38 años</span> algunos minutos</h3>  
+                </div>  
+            </div>
+
+            <div id="btn-cancel" class="btn-cancel">
+                    <div id="btnRepetir" class="boton-previa-1">Cancelar</div>
+            </div>
+        </div>
+
+    <div id="exito-card" class="exito-card no-mostrar">
+        <div class="search-bar check-bar">
+            <h3 class="buscar">GifO Subido Con Éxito</h3>
+            <img src="images/button3.svg" alt="Boton cerrar" class="btn-cerrar">
+        </div>
+        <div class="exito-container">
+            <div id="container-gif" class="container-gif">
+               
+
+            </div>
+
+            <div class="container-btns">
+                <h3 class="texto-exito">GifO creado con éxito</h3>
+                <div id="btn-copiar-enlace" class="botones-exito">Copiar Enlace GifO</div>
+                <div id="btn-descargar-gifo" class="botones-exito">Descargar GifO</div>
+                <div class="btn2 btn-listo-exito" id="btn-listo-exito">
+                    <h3 id="boton-listo-gifo-creado" class="listo negro">Listo</h3>
+                </div>
+                <div id="divInput"></div>
+
+            </div>
+        </div>
+    </div>
+
+        
+    <section id="misGifos" class="misGifos">
+        <div class="white-bar">
+            <h3 id="tendencias" class="white-bar-text">Mis GifOS</h3>
+        </div>
+        <div class="misGifosContainer" id="misGifosContainer"></div>
+
+        <h2 id="aun" class="aun">Aún no has creado ningún Gifo :(</h2>
+    </section>
+
+    <script src="js/camscripts.js"></script>    
+</body>
+</html>
