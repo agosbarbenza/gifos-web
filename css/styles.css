@@ -359,6 +359,10 @@
 
 }
 
+.container-gif:hover{
+    border: 1px dashed #110038;
+}
+
 .search-button img{
     line-height: 2.25rem;
     transform: translateY(0.5rem);
@@ -491,6 +495,10 @@
 .img-container{
     max-width: 17,5rem;
     
+}
+
+.containerGif{
+    max-width: 17,5rem;
 }
 
 .gif{

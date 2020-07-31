@@ -38,9 +38,7 @@ window.onload = () => {
     descargarGif();
 }
 
-
 //////////////////////////OBTENER CAMARA///////////////////////////////
-
 function getCam() {
     let btnStart = document.getElementById("btn-start");
     let btnRepetir = document.getElementById("btnRepetir");

@@ -57,7 +57,7 @@ function verSugerencia(gif, unDiv){ //muestra 1 sugerencia random de cada uno
     let url = gif.data.images.downsized_large.url;
     unDiv.appendChild(img);
     img.setAttribute('src', url);
-    img.setAttribute('width', '280px');
+    img.setAttribute('width', '100%');
     img.setAttribute('height', '288px');        
 }
 
@@ -150,6 +150,7 @@ function guardarBusqueda (){
     divChild.style.marginRight = '0.5rem';
     containerTrending.scrollIntoView({ behavior: "auto" })
     verDeNuevo(input2);
+    divChild.style.cursor = "pointer";
 }
 
 function verDeNuevo(inp){
@@ -167,6 +168,14 @@ searchBtn.addEventListener('mouseup',()=>{
     searchBtn.style.background = "#E6E6E6";
 })
 
+searchBtn.addEventListener('mouseover', ()=>{
+    searchBtn.style.border = "1px dashed #110038";
+})
+
+searchBtn.addEventListener('mouseout', ()=>{
+    searchBtn.style.border = "1px solid #808080";
+})
+
 searchBtn.addEventListener('click', ()=> {
     let input = document.getElementById('searchinput').value; 
     let valorInput = localStorage.setItem("busqueda", input);
@@ -179,6 +188,7 @@ let input = document.getElementById("searchinput");
     
 
 let menu = document.getElementById('busquedas-sugeridas');
+
 
 input.addEventListener('keyup', (e)=>{
     let searchbtn = document.getElementById("search-button");
@@ -207,49 +217,6 @@ input.addEventListener('keyup', (e)=>{
         guardarBusqueda();
         menu.style.display = 'none'; 
     }    
-})
-
-/////////////////////CAMBIO DE TEMA ///////////////////////////////
-
-let modes = document.getElementById("modes");
-let halfButton = document.getElementById("half-button");
-let sailorContainer = document.getElementById("sailor-container");
-
-/////////////////Estilo dinámico del botón cambiar tema
-
-let cambiarEstilo = document.querySelector(".probar");
-let button2 = document.querySelector(".button2");
-
-cambiarEstilo.addEventListener('mouseover', ()=> {
-        button2.style.border = "1px dashed #110038";
-        halfButton.style.border = "1px dashed #110038";
-        button2.style.boxshadow = "inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF";
-        halfButton.style.boxshadow = "inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF";
-        button2.style.background = "#E6BBE2";
-        halfButton.style.background = "#E6BBE2";
-})
-
-cambiarEstilo.addEventListener('mouseout', ()=> {
-    button2.style.border = "1px solid #110038";
-    halfButton.style.border = "1px solid #110038";
-    button2.style.background = "#F7C9F3";
-    halfButton.style.background = "#F7C9F3";
-})
-
-
-cambiarEstilo.addEventListener('click', ()=>{
-       if(modes.style.display == "block"){
-           modes.style.display = "none";
-       }else{
-        modes.style.display = "block"
-       }
-
-})
-
-sailorContainer.addEventListener("mouseleave", ()=>{
-    if(modes.style.display = 'block'){
-        modes.style.display = 'none'
-    }
 })
 
 /////////////////////////
