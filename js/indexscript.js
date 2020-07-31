@@ -158,6 +158,15 @@ function verDeNuevo(inp){
     })
 }
 
+searchBtn.addEventListener('mousedown', ()=>{
+    searchBtn.style.border = "1px dashed #110038";
+})
+
+searchBtn.addEventListener('mouseup',()=>{
+    searchBtn.style.border = "1px solid #808080";
+    searchBtn.style.background = "#E6E6E6";
+})
+
 searchBtn.addEventListener('click', ()=> {
     let input = document.getElementById('searchinput').value; 
     let valorInput = localStorage.setItem("busqueda", input);
@@ -172,11 +181,24 @@ let input = document.getElementById("searchinput");
 let menu = document.getElementById('busquedas-sugeridas');
 
 input.addEventListener('keyup', (e)=>{
+    let searchbtn = document.getElementById("search-button");
     
     if(e.currentTarget.value.trim() === ""){
         menu.style.display = 'none'; 
+        document.getElementById("lupa-dia-activa").style.display = "none";
+        document.getElementById("lupa-dia").style.display = "block";
+        document.getElementById("search-text").style.color = "#B4B4B4";
+        searchbtn.style.background = "#E6E6E6";
+
     }else{
         menu.style.display = 'block';
+        
+        searchbtn.style.background = "#F7C9F3";
+        searchbtn.style.border = "1px solid #110038";
+        searchbtn.style.boxshadow = "inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF";
+        document.getElementById("search-text").style.color = "#110038";
+        document.getElementById("lupa-dia").style.display = "none";
+        document.getElementById("lupa-dia-activa").style.display = "block";
     }
     if(e.keyCode == 13){
         console.log("funcionó");

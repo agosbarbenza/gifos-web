@@ -49,7 +49,7 @@
     display: flex;
     /* margin-top: 1rem; */
     position: relative;
-    left: 38rem;
+    left: 37rem;
 }
 
 
@@ -221,6 +221,12 @@
 .lupa-noche{
     display: none;
 }
+
+
+.lupa-dia-activa{
+    display: none;
+}
+
 .search-input{
     width: 88%;
     height: 3rem;
@@ -252,7 +258,7 @@
 }
 
 .busqueda{
-    width: 66.06rem;
+    width: 97%;
     height: 2.25rem;
     background: #F0F0F0;
     border: 1px solid #808080;
@@ -357,6 +363,12 @@
     line-height: 2.25rem;
     transform: translateY(0.5rem);
     margin-left: 0.4rem;
+}
+
+.searchbtn{
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
 }
 
 .search-text{
@@ -790,6 +802,11 @@
     height: 2.25rem;
     position: relative;
     top: 28.96rem;
+    display: none;
+}
+
+.flechita{
+    display: none;
 }
 
 
@@ -836,12 +853,12 @@
 }
 
 .btn-container-1{
-justify-content: space-between;
-margin-right: 1rem;
-margin-left: 0.7rem;
-position: relative;
-display: flex;
-margin-top: 1.3rem;
+    justify-content: flex-end;
+    margin-right: 1rem;
+    margin-left: 0.7rem;
+    position: relative;
+    display: flex;
+    margin-top: 1.3rem;
 }
 
 .timer2{
@@ -851,6 +868,7 @@ margin-top: 1.3rem;
     width: 7.75rem;
     height: 2.25rem;
     position: relative;
+    display: none;
     
 }
 
