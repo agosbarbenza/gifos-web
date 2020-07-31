@@ -129,16 +129,18 @@ for (let i=0; i < button.length; i++){
 /////////////////////////////////////////////////////////////////////////////////////////
 
 let searchBtn = document.getElementById('search-button');
-
+let divChild
+let input2
 
 function guardarBusqueda (){
-    let input = document.getElementById('searchinput').value; 
-    let divChild = document.createElement("div");
+    menu.style.display = 'none'; 
+    input2 = document.getElementById('searchinput').value; 
+    divChild = document.createElement("div");
     let div= document.getElementById("div-busquedas");
     let busqueda = document.createElement("h4");
     divChild.appendChild(busqueda);
     div.appendChild(divChild);
-    busqueda.innerHTML = "#"+input;
+    busqueda.innerHTML = "#"+input2;
     div.style.marginTop = '2rem';
     div.style.position = 'relative';
     divChild.style.display ="inline-block";
@@ -147,7 +149,13 @@ function guardarBusqueda (){
     busqueda.classList.add('ver-mas-2');
     divChild.style.marginRight = '0.5rem';
     containerTrending.scrollIntoView({ behavior: "auto" })
+    verDeNuevo(input2);
+}
 
+function verDeNuevo(inp){
+    divChild.addEventListener('click', ()=>{
+        verMasGifs(inp);
+    })
 }
 
 searchBtn.addEventListener('click', ()=> {
@@ -222,21 +230,4 @@ sailorContainer.addEventListener("mouseleave", ()=>{
     }
 })
 
-/////////////////////////Estilo dinamico del boton Mis Gifos
-
-let misGifos = document.getElementById("mis-gifos-boton");
-let spanMisGifos = document.getElementById('span-mis-gifos');
-
-/*misGifos.addEventListener('mouseover', ()=>{
-    if(misGifos.style.border !== "1px dotted #110038"){
-        spanMisGifos.style.textDecoration = "underline";
-        misGifos.style.border = "1px dotted #110038";
-        misGifos.style.cursor = "pointer";
-    }
-})
-
-misGifos.addEventListener('mouseleave', ()=>{
-    spanMisGifos.style.textDecoration = "none";
-        misGifos.style.border = "none";
-})
-*/
+/////////////////////////

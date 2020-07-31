@@ -122,7 +122,7 @@
     box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
     width: 11.30rem;
     height: 6.28rem;
-    left: 61.30rem;
+    left:   53.5rem;
     display: none;
     position: absolute;
     z-index: 1;
@@ -573,7 +573,7 @@
     height: 24.3rem;
     margin: auto;
     position: relative;
-    top: 4.69rem;
+    top: 9rem;
     background: #E6E6E6;
     box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
 }
@@ -662,14 +662,7 @@
     right: 0.44rem;
 }
 
-.misGifos{
-    margin-right: 7%;
-    margin-left: 7%;
-    position: relative;
-    top: 12rem;
-    margin-bottom: 1rem;
 
-}
 
 /* acá termina lo relacionado a la primera card que es la pagina principal*''''''''''''''''/
 
@@ -681,7 +674,7 @@
     height: 34.25rem;
     margin: auto;
     position: relative;
-    top: 4.69rem;
+    top: 10rem;
     background: #E6E6E6;
     box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
 
@@ -807,7 +800,7 @@
     height: 34.25rem;
     margin: auto;
     position: relative;
-    top: 4.69rem;
+    top: 10rem;
     background: #E6E6E6;
     box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
 
@@ -987,6 +980,16 @@ margin-top: 1.3rem;
 }
 
 /*MIS GIFOS*/
+
+
+.misGifos{
+    margin-right: 7%;
+    margin-left: 7%;
+    position: relative;
+    top: 12rem;
+    margin-bottom: 1rem;
+
+}
 
 .misGifosContainer{
     display: flex;

@@ -221,7 +221,7 @@ cancelarSubida();
 
 document.getElementById("boton-listo-gifo-creado").addEventListener('click', ()=>{
     exitoCard.style.display = "none";
-    misGifosCard.style.top = "4rem";
+    /*misGifosCard.style.top = "10rem";*/
 })
 
 
