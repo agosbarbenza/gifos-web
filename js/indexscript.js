@@ -132,6 +132,31 @@ let searchBtn = document.getElementById('search-button');
 let divChild
 let input2
 
+let topicsList = ["Funny","Darth Vader","Love", "Kisses", "Hello", "GoodBye", "WTF", "Oh my god", "UFO", "Stars", "Glitter", "Puppies", "Simpsons", "Parks", "Hollywood","Cartoons","Reactions","Smile", "Sad", "Angry", "Videogames", "Football", "Sports", "Animals", "Music", "friendship", "engineering", "road", "supermarket", "chemistry", "opinion", "popular", "menu", "error", "beer", "Party", "Christmas", "Halloween", "Thanksgiving", "Argentina", "Plants", "God", "Cars", "Disney", "Universal", "Planets", "Sexy", "Magic", "Clock", "Time", "Fast", "Sky", "Snow", "Fun", "Storm", "TV", "Show", "Classic", "Memes", "9gag", "Emotions", "Crazy", "Insane", "Cool", "Brothers", "Sisters", "Family", "Marvel", "Comics", "Joker"];
+
+function busquedasSugeridas(){
+    randomTopic1 = topicsList[Math.floor(Math.random() * topicsList.length)]
+    document.getElementById("topic1").innerText = randomTopic1;
+    document.getElementById("busqueda1").addEventListener("click", ()=>{
+        verMasGifs(randomTopic1);
+    })
+    randomTopic2 = topicsList[Math.floor(Math.random() * topicsList.length)]
+    document.getElementById("topic2").innerText = randomTopic2;
+    document.getElementById("busqueda2").addEventListener("click", ()=>{
+        verMasGifs(randomTopic2);
+    })
+    randomTopic3 = topicsList[Math.floor(Math.random() * topicsList.length)]
+    document.getElementById("topic3").innerText = randomTopic3;
+    document.getElementById("busqueda3").addEventListener("click", ()=>{
+        verMasGifs(randomTopic3);
+    })
+
+}
+
+
+
+
+
 function guardarBusqueda (){
     menu.style.display = 'none'; 
     input2 = document.getElementById('searchinput').value; 
@@ -192,6 +217,7 @@ let menu = document.getElementById('busquedas-sugeridas');
 
 input.addEventListener('keyup', (e)=>{
     let searchbtn = document.getElementById("search-button");
+    busquedasSugeridas();
     
     if(e.currentTarget.value.trim() === ""){
         menu.style.display = 'none'; 
