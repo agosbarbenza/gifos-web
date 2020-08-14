@@ -150,6 +150,7 @@
 .sailor-div:hover{
     background: #F0F0F0;
     border: 1px solid #808080;
+    cursor: pointer;
     
 }
 
@@ -1045,6 +1046,11 @@
     align-content: space-between;
 
 
+}
+
+
+.light-cam{
+    display: none;
 }
 
 .aun{

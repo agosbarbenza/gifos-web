@@ -143,6 +143,7 @@
     background: #2E32FB;
     border: 1px solid rgba(51,53,143,0.20);
     box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+    cursor: pointer;
 }
 
 .sailor-container {
@@ -171,7 +172,7 @@
 }*/
 
 .dark-logo {
-    display: block;
+    display: inline;
 }
 
 .logo {
@@ -620,6 +621,7 @@
 .boton-2:hover {
     cursor: pointer;
     border: 1px dashed #110038;
+    background: #CE36DB;
 }
 
 .boton-1 {
@@ -636,7 +638,7 @@
 .boton-2 {
     width: 9rem;
     height: 2.25rem;
-    background: #F7C9F3;
+    background: #EE3EFE;;
     border: 1px solid #110038;
     box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
     text-align: center;
@@ -708,7 +710,7 @@
 }
 
 .btn1 {
-    background: #F7C9F3;
+    background: #EE3EFE;
     border: 1px solid #110038;
     box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
     width: 2.25rem;
@@ -721,7 +723,7 @@
 }
 
 .btn2 {
-    background: #F7C9F3;
+    background: #EE3EFE;
     border: 1px solid #110038;
     box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
     width: 9rem;
@@ -743,7 +745,7 @@
     text-align: center;
     font-weight: 300;
     font-size: 16px;
-    color: #110038;
+    color: #FFFFFF;
     letter-spacing: 0;
     text-align: center;
 }
@@ -815,6 +817,16 @@
     display: none;
 }
 
+
+
+.oscuro{
+    display: none;
+}
+
+.light-cam{
+    display: inline;
+}
+
 .botones-previa {
     display: flex;
 }
@@ -822,11 +834,12 @@
 .boton-previa-1 {
     width: 9rem;
     height: 2.25rem;
-    background: #FFF4FD;
+    background: #110038;
     border: 1px solid #110038;
     box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
     text-align: center;
     line-height: 2.25rem;
+    color: #FFFFFF;
 }
 
 .boton-previa-1:hover {
@@ -933,7 +946,7 @@
     box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
     margin: auto;
     position: relative;
-    top: 5.5rem;
+    top: 9rem;
 }
 
 .exito-container {
