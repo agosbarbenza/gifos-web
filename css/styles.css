@@ -154,6 +154,10 @@
     
 }
 
+.lupa-noche-activa{
+    display: none;
+}
+
 
 .sailor-container{
     line-height: 6.28rem;
@@ -274,7 +278,7 @@
     background: #DBDBDB;
     border: 1px dashed #808080;
     box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
-
+cursor: pointer;
 }
 
 .busquedas-sugeridas{

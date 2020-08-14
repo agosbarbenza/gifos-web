@@ -158,6 +158,9 @@
     padding: 0 0.8rem;
 }
 
+.lupa-noche-activa{
+    display: none;
+}
 .mis-gifos:hover {
     border: 0.07rem dashed #ffffff;
     cursor: pointer;
@@ -254,7 +257,7 @@
 .busqueda {
     width: 97%;
     height: 2.25rem;
-    background: #F0F0F0;
+    background: #CCCCCC;;
     border: 1px solid #808080;
     box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
     margin-left: 0.91rem;
@@ -265,12 +268,13 @@
     background: #DBDBDB;
     border: 1px dashed #808080;
     box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    cursor: pointer;
 }
 
 .busquedas-sugeridas {
     width: 100%;
     height: 10rem;
-    background: #E6E6E6;
+    background: #B4B4B4;
     box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
     display: none;
     position: absolute;
@@ -574,7 +578,7 @@
     margin: auto;
     position: relative;
     top: 9rem;
-    background: #E6E6E6;
+    background: #B4B4B4;
     box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
 }
 
@@ -627,7 +631,7 @@
 .boton-1 {
     width: 9rem;
     height: 2.25rem;
-    background: #FFF4FD;
+    background: #CCCCCC;
     border: 1px solid #110038;
     box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
     text-align: center;
@@ -672,7 +676,7 @@
     margin: auto;
     position: relative;
     top: 10rem;
-    background: #E6E6E6;
+    background: #B4B4B4;
     box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
 }
 
@@ -809,7 +813,7 @@
     margin: auto;
     position: relative;
     top: 10rem;
-    background: #E6E6E6;
+    background: #B4B4B4;
     box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
 }
 
@@ -942,7 +946,7 @@
 .exito-card {
     width: 45.06rem;
     height: 24.44rem;
-    background: #E6E6E6;
+    background: #B4B4B4;
     box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
     margin: auto;
     position: relative;
@@ -959,7 +963,7 @@
 .botones-exito {
     width: 16rem;
     height: 2.25rem;
-    background: #FFF4FD;
+    background: #CCCCCC;
     border: 1px solid #110038;
     box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
     text-align: center;

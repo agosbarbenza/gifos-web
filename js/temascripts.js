@@ -22,10 +22,12 @@ document.getElementById("day").addEventListener("click", function () {
 
 
 function temaDark(){
+
     document.getElementById("themes").setAttribute("href", "./css/dark.css");
     sessionStorage.setItem("theme", "dark");
     button2.style.background = "#EE3EFE";
-    halfButton.style.background = "#EE3EFE"
+    halfButton.style.background = "#EE3EFE";
+    
 }
 
 function temaDay() {
@@ -110,3 +112,8 @@ document.getElementById("mis-gifos-boton").addEventListener("mouseout", ()=>{
     document.getElementById("span-mis-gifos").style.textDecoration = 'none';
 })
 
+
+
+////////////////////////////N° DE VISITAS DINAMICO////////////////////////////
+let numeroVisitas = Math.floor((Math.random() * (19999999-1999999))+1999999);
+document.getElementById("visitas").innerText = numeroVisitas;
