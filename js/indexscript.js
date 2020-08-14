@@ -222,12 +222,14 @@ let menu = document.getElementById('busquedas-sugeridas');
 
 document.getElementById("night").addEventListener("click", function () {
     let searchbtn = document.getElementById("search-button");
-    searchbtn.style.background = "#B4B4B4";   
+    searchbtn.style.background = "#B4B4B4";
+    document.getElementById("search-text").style.color ="#8F8F8F";   
 });
 
 document.getElementById("day").addEventListener("click", function () {
     let searchbtn = document.getElementById("search-button");
     searchbtn.style.background = "#E6E6E6";
+    document.getElementById("search-text").style.color = "#B4B4B4";
 });
 
 input.addEventListener('keyup', (e) => {
@@ -282,4 +284,3 @@ input.addEventListener('keyup', (e) => {
         menu.style.display = 'none';
     }
 })
-
