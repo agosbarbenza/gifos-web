@@ -354,13 +354,13 @@
 
 .search-button:hover{
     cursor: pointer;
-    border: 1px dashed #110038;
     border: 1px dashed #808080;
 
 }
 
 .container-gif:hover{
-    border: 1px dashed #110038;
+    /*border: 1px dashed #110038;*/
+   
 }
 
 .search-button img{
@@ -530,6 +530,9 @@
 
 .ver-mas:hover{
     cursor: pointer;
+    border: 1px dashed #110038;
+    background: #3A72DB;
+
 }
 
 .ver-mas-text{
@@ -561,6 +564,10 @@
 .img-trend{
     width: 100%;
 }
+
+/*.img-trend:hover{
+    border: 1px dashed #110038;
+}*/
 
 .gif-container{
     width: 18rem;
@@ -636,11 +643,14 @@
 }
 
 .boton-1:hover{
+    border: 1px dashed #110038;
     cursor: pointer;
+
 }
 
 .boton-2:hover{
     cursor: pointer;
+    border: 1px dashed #110038;
 }
 
 .boton-1{
@@ -743,6 +753,10 @@
     line-height: 2.25rem;
 }
 
+.btn1:hover{
+    border: 1px dashed #110038;
+}
+
 .btn2{
     background: #F7C9F3;
     border: 1px solid #110038;
@@ -751,6 +765,11 @@
     height: 2.25rem;
     line-height: 2.25rem;
 }
+
+.btn2:hover{
+    border: 1px dashed #110038;
+}
+
 .btn-cam{
     position: relative;
     left: 0.4rem;
@@ -850,6 +869,7 @@
 
 .boton-previa-1:hover{
     cursor: pointer;
+    border: 1px dashed #110038;
 }
 
 .boton-previa-2{
@@ -973,6 +993,7 @@
 
 .botones-exito:hover{
     cursor: pointer;
+    border: 1px dashed #110038;
 }
 .texto-exito{
     font-size: 16px;
@@ -1001,7 +1022,7 @@
 }
 
 .container-gif{
-    width: 22.81rem;
+    max-width: 18rem;
     height: 11.94rem;
 }
 

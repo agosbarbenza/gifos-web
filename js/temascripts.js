@@ -3,6 +3,43 @@
 let modes = document.getElementById("modes");
 let halfButton = document.getElementById("half-button");
 let sailorContainer = document.getElementById("sailor-container");
+  
+
+let sailorDay = document.getElementById("day");
+let sailorNight = document.getElementById("night");
+
+
+document.getElementById("night").addEventListener("click", function () {
+    temaDark();
+});
+
+document.getElementById("day").addEventListener("click", function () {
+    temaDay();
+});
+
+
+function temaDark(){
+    document.getElementById("themes").setAttribute("href", "./css/dark.css");
+    sessionStorage.setItem("theme", "dark");
+}
+
+function temaDay() {
+    document.getElementById("themes").setAttribute("href", "./css/styles.css");
+    sessionStorage.setItem("theme", "day");
+}
+
+cambiarTema();
+
+function cambiarTema() {
+    if (sessionStorage.getItem("theme") == "dark") {
+      temaDark();
+    }else{
+        temaDay();
+    }
+  };
+
+
+
 
 /////////////////Estilo dinámico del botón cambiar tema
 
@@ -45,3 +82,14 @@ sailorContainer.addEventListener("mouseleave", ()=>{
         modes.style.display = 'none'
     }
 })
+
+// MIS GIFOS
+
+document.getElementById("mis-gifos-boton").addEventListener("mouseover", ()=>{
+    document.getElementById("span-mis-gifos").style.textDecoration = 'underline';
+})
+
+document.getElementById("mis-gifos-boton").addEventListener("mouseout", ()=>{
+    document.getElementById("span-mis-gifos").style.textDecoration = 'none';
+})
+

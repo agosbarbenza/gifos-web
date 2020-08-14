@@ -94,7 +94,7 @@ function verMasGifs(tag) {
         let url = gif.data[index].images.downsized_large.url;
         container.appendChild(img);
         img.setAttribute('src', url);
-        img.setAttribute('width', '280px');
+        img.setAttribute('width', '288px');
         img.setAttribute('height', '288px');
         tendencias.innerText = tag;
         containerTrending.scrollIntoView({ behavior: "smooth" })
