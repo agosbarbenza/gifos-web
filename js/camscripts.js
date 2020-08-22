@@ -1,5 +1,4 @@
 
-//Variables Globales
 //*****Gif ID
 let gifId
 //*****Guardar gifo
@@ -74,7 +73,7 @@ function getCam() {
 
 //////////////////////////GRABAR GIF///////////////////////////////
 
-let grabando;
+let flag;
 
 function recordCam() {
     let btnCamCapturar = document.getElementById("btn1");
@@ -105,10 +104,10 @@ function recordCam() {
                 },
             });
             recorder.startRecording();
-            grabando = true;
+            flag = 0;
             setTimeout(() => {
-                grabando = false;
-            }, 2000); //debe grabar mínimo 2 segundos
+                grabando = 1;
+            }, 1000); //debe grabar mínimo 1 segundo
         })
 
     })
@@ -122,7 +121,7 @@ function stopRecord() {
     let btnsListo = [btnListo, btnRecordIcon];
     btnsListo.forEach((btn) => {
         btn.addEventListener("click", () => {
-            if (grabando == false) { //si grabó mínimo 2 segundos
+            if (flag == 1) { //si grabó mínimo 1 segundo
                 let chequeoCard = document.getElementById("chequeo");
                 chequeoCard.style.display = "none";
                 let vistaPreviaCard = document.getElementById("vistaPrevia");
